@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chatroom.Service", "Chatroom.Service\Chatroom.Service.csproj", "{BAD9231D-DDA1-4AC7-83F0-7F82D59D6CAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chatroom.Domain", "Chatroom.Domain\Chatroom.Domain.csproj", "{E7D9B43B-F108-41B9-B25E-70FBF4CA39D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chatroom.Client", "Chatroom.Client\Chatroom.Client.csproj", "{BE090657-C1BF-4D90-A0E2-E1715FD5C313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01EE6611-35B1-427D-839A-52029A2AC99F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		azure-pipelines.yml = azure-pipelines.yml
+		GitVersion.yml = GitVersion.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		LamaDebug|Any CPU = LamaDebug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAD9231D-DDA1-4AC7-83F0-7F82D59D6CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD9231D-DDA1-4AC7-83F0-7F82D59D6CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD9231D-DDA1-4AC7-83F0-7F82D59D6CAA}.LamaDebug|Any CPU.ActiveCfg = LamaDebug|Any CPU
+		{BAD9231D-DDA1-4AC7-83F0-7F82D59D6CAA}.LamaDebug|Any CPU.Build.0 = LamaDebug|Any CPU
+		{BAD9231D-DDA1-4AC7-83F0-7F82D59D6CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD9231D-DDA1-4AC7-83F0-7F82D59D6CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D9B43B-F108-41B9-B25E-70FBF4CA39D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D9B43B-F108-41B9-B25E-70FBF4CA39D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D9B43B-F108-41B9-B25E-70FBF4CA39D0}.LamaDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D9B43B-F108-41B9-B25E-70FBF4CA39D0}.LamaDebug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D9B43B-F108-41B9-B25E-70FBF4CA39D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D9B43B-F108-41B9-B25E-70FBF4CA39D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE090657-C1BF-4D90-A0E2-E1715FD5C313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE090657-C1BF-4D90-A0E2-E1715FD5C313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE090657-C1BF-4D90-A0E2-E1715FD5C313}.LamaDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE090657-C1BF-4D90-A0E2-E1715FD5C313}.LamaDebug|Any CPU.Build.0 = Debug|Any CPU
+		{BE090657-C1BF-4D90-A0E2-E1715FD5C313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE090657-C1BF-4D90-A0E2-E1715FD5C313}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7CF138C-553A-4F72-B53F-8CCAC3E71843}
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+EndGlobal

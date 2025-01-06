@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "LicensingServiceOptions": {
+    "LicenseId": "00000000-0000-0000-0000-000000000000",
+    "ServiceKeyId": "00000000-0000-0000-0000-000000000000",
+    "ServiceKeyPublicMember": "xxx",
+    "BillableResourceId": "00000000-0000-0000-0000-000000000000",
+    "LicenseServiceUri": "https://dub-crm-api.azure-api.net/licensing/",
+    "ConsumptionServiceUri": "https://dub-crm-api.azure-api.net/consumption",
+    "BillablePlanId": "consumption-01"
+  },
+  "ChatOptions": {
+    "ChatServiceUri": "https://xxx.azurewebsites.net/api",
+    "TenantId": "00000000-0000-0000-0000-000000000000",
+    "ClientId": "00000000-0000-0000-0000-000000000000"
+  }
+}

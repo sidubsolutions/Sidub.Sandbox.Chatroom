@@ -1,0 +1,51 @@
+# CI on main branch...
+trigger:
+- main
+
+# Ubuntu pool...
+pool:
+  vmImage: windows-2022
+
+variables:
+- group: sidub-solutions
+
+steps:
+
+# Copy source files to staging directory
+- task: CopyFiles@2
+  displayName: 'Copy Source Files to Staging'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: |
+      **
+      !**/.git/**
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Source'
+    CleanTargetFolder: true
+    OverWrite: true
+
+- task: Cache@2
+  displayName: Check / download cache (GitVersion)
+  inputs:
+    key: 'gitversion-cache'
+    path: '$(Build.SourcesDirectory)\.git\gitversion_cache'
+
+# Add GitVersion...
+- task: gitversion/setup@0
+  displayName: Install GitVersion
+  inputs:
+    versionSpec: '5.x'
+
+# Execute GitVersion...
+- task: gitversion/execute@0
+  displayName: Calculate GitVersion
+  inputs:
+    useConfigFile: true
+    configFilePath: 'GitVersion.yml'
+
+# Publish source artifact...
+- task: PublishBuildArtifacts@1
+  displayName: Publish source
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Source'
+    ArtifactName: 'Source'
+    publishLocation: 'Container'
