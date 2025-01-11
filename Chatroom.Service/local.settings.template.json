@@ -1,0 +1,11 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "MessageServerOptions__ConnectionString": "Endpoint=http://localhost;Port=8888;AccessKey=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ABCDEFGH;Version=1.0;",
+    "MessageServerOptions__UserIdentifierClaimType": "preferred_username",
+    "AuthenticationOptions__ValidIssuer": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/v2.0",
+    "AuthenticationOptions__ValidAudience": "35a21cb0-bf6e-4de8-a7ad-736afc400ae8"
+  }
+}
